@@ -124,13 +124,6 @@ mkdir -p $INSTALL $SOURCES
 URL=$1 
 
 
-if [[ $URL =~ therock-afar-([0-9]+\.[0-9]+\.[0-9]+)- ]]
-then
-  version=${BASH_REMATCH[1]}
-else
-  exit 1
-fi
-
 VV=22
 
 mkdir -p $TMP
